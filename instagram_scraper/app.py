@@ -1385,7 +1385,7 @@ def main():
         raise ValueError('Filters apply to user posts')
 
     if (args.filter_location or args.filter_location_file) and not args.include_location:
-        pasrser.print_help()
+        parser.print_help()
         raise ValueError('Location filter needs locations in metadata to filter properly')
 
     if args.filename:
